@@ -6,7 +6,7 @@ import style from "./home.module.scss";
 import Button from "components/button";
 import AddQuestion from "./add-question";
 import { useDispatch, useSelector } from "react-redux";
-import { CreateQuestion, setState } from "../../redux/form.js";
+import { CreateQuestion, setState, setCategory } from "../../redux/form.js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -70,6 +70,8 @@ const Home = () => {
         theme: "light",
       });
       dispatch(setState({ field: "success", value: false }));
+      setAddQuestion(false);
+      dispatch(setCategory(0));
     }
     if (isError) {
       toast.error(error, {

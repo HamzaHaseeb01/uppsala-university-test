@@ -5,7 +5,6 @@ export const CreateQuestion = createAsyncThunk(
   "/user/CreateQuestion",
   async (user, thunkAPI) => {
     try {
-      ;
       const response = await axios.post(
         "https://beta.u-careplatform.se/api/contents/",
         user,
@@ -13,9 +12,9 @@ export const CreateQuestion = createAsyncThunk(
           withCredentials: true,
         }
       );
-      ;
+
+      
     } catch (err) {
-      ;
       if (err.response && err.response.data) {
         return thunkAPI.rejectWithValue({
           err: err.response.data.detail,
@@ -61,22 +60,20 @@ const form = createSlice({
       state.options.splice(index, 1);
     },
     setCategory: (state, { payload }) => {
+      
       state.category = payload;
     },
   },
   extraReducers: {
     [CreateQuestion.fulfilled]: (state, action) => {
-      ;
       state.loading = false;
       state.success = true;
     },
     [CreateQuestion.rejected]: (state, action) => {
-      ;
       state.loading = false;
       state.success = false;
       state.isError = true;
       state.error = action.payload.err;
-      ;
     },
     [CreateQuestion.pending]: (state, action) => {
       state.loading = true;
