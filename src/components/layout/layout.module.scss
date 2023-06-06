@@ -1,0 +1,98 @@
+@import "styles/_breakpoints.scss";
+@import "styles/_colors.scss";
+@import "styles/_mixin.scss";
+
+.main {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid #b7b7b7;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 0px #b7b7b7;
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      p {
+        font-size: 16px;
+        color: #6e6e6e;
+      }
+      .innerFlex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 10px;
+        p {
+          font-size: 16px;
+          color: #6e6e6e;
+        }
+        .moreInner {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+    }
+  }
+  .body {
+    background-color: #e2e2e2;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    height: calc(100vh - 165px);
+    overflow-y: auto;
+    .sidebar {
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: fixed;
+      .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 0px 15px 0px #b7b7b7;
+      padding: 20px;
+      flex: 1;
+      margin-left: 100px;
+      height: max-content;
+    }
+  }
+  .footer {
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    .inner1 {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      .logoDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        p {
+          font-size: 14px;
+          color: #6e6e6e;
+        }
+      }
+    }
+    .p {
+      font-size: 14px;
+      color: #6e6e6e;
+      span {
+        color: $primary;
+        margin-left: 2px;
+      }
+    }
+  }
+}

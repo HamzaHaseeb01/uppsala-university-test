@@ -1,0 +1,28 @@
+@import "styles/_breakpoints.scss";
+@import "styles/_colors.scss";
+@import "styles/_mixin.scss";
+
+.research {
+  margin-top: 20px;
+  .p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    span {
+      font-weight: 600 !important;
+    }
+  }
+  h6 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 20px;
+    span {
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+  .radio {
+    margin-top: 20px;
+  }
+}

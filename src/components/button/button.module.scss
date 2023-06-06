@@ -1,0 +1,38 @@
+@import "styles/_breakpoints.scss";
+@import "styles/_colors.scss";
+@import "styles/_mixin.scss";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
+  height: 42px;
+  width: 100%;
+  background: $primary;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  padding: 12px 25px;
+  color: $white;
+  &:disabled {
+    background-color: #9da1aa;
+    span {
+      color: #363636 !important;
+    }
+  }
+
+  .img {
+    margin-right: 10px;
+    width: 12px;
+    height: 13px;
+  }
+
+  .btnTitle {
+    color: $white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

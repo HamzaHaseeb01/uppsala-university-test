@@ -1,0 +1,101 @@
+@import "styles/_breakpoints.scss";
+@import "styles/_colors.scss";
+@import "styles/_mixin.scss";
+
+.mainMain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  p {
+    font-size: 13px;
+    color: #000;
+  }
+}
+
+.tabsDiv {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #b7b7b7;
+  margin-top: 20px;
+  p {
+    color: #b7b7b7;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+.questionDiv {
+  border: 1px dashed #b7b7b7;
+  border-radius: 8px;
+  margin-top: 20px;
+  .mainInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #b7b7b7;
+    padding: 10px 20px;
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      h6 {
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+  .bodyDiv {
+    padding: 10px 20px;
+    min-height: 100px;
+    height: 100%;
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      p {
+        color: $primary;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.footerDiv {
+  background-color: #e2e2e2;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  .border {
+    border: 1px solid #757171;
+    height: 23px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #757171;
+    cursor: pointer;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    color: $primary;
+  }
+}
+.btnDiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  .btn {
+    background-color: transparent;
+    border: 1px solid #757171;
+    span {
+      color: #757171;
+    }
+  }
+}

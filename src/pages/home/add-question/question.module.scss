@@ -1,0 +1,48 @@
+@import "styles/_breakpoints.scss";
+@import "styles/_colors.scss";
+@import "styles/_mixin.scss";
+
+.addQuestion {
+  background-color: #e2e2e287;
+  padding: 20px;
+  box-shadow: 0px 6px 10px 0px #b7b7b7;
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    p {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .grid {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .flexInner {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      cursor: pointer;
+      p {
+        font-size: 14px;
+        color: #000;
+      }
+    }
+  }
+  .btnDiv {
+    display: flex;
+    justify-content: flex-end;
+    .btn {
+      background-color: white;
+      margin-top: 50px;
+      border: 1px solid #757171;
+      span {
+        color: #757171;
+      }
+    }
+  }
+}

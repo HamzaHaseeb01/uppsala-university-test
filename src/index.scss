@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+html,
+body {
+  font-family: "Public Sans", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Remove scrollbar space */
+  background: #e6e7e8; /* Optional: just make scrollbar invisible */
+  height: 5px;
+  border-radius: 8px;
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #c7c8ca;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 5px; /* Remove scrollbar space */
+  background: #e6e7e8; /* Optional: just make scrollbar invisible */
+  height: 5px;
+  border-radius: 8px;
+  display: none;
+}
+
+.public-DraftStyleDefault-ltr {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.rdw-editor-main {
+  height: 150px;
+}
+.DraftEditor-editorContainer,
+.DraftEditor-root,
+.public-DraftEditor-content {
+  height: 118px !important;
+}
+.rdw-editor-wrapper {
+  background-color: #fff !important;
+}
+.public-DraftStyleDefault-block {
+  margin: 0 !important;
+}

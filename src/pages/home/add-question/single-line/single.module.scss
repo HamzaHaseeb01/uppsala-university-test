@@ -1,0 +1,33 @@
+@import "styles/_breakpoints.scss";
+@import "styles/_colors.scss";
+@import "styles/_mixin.scss";
+
+.myLine {
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 20px 0px;
+    p {
+      font-size: 13px;
+      font-weight: 400;
+    }
+  }
+
+  .btnDiv {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    gap: 20px;
+    .btn {
+      background-color: white;
+      border: 1px solid #757171;
+      span {
+        color: #757171;
+      }
+    }
+  }
+  .checkbox {
+    margin-top: 15px;
+  }
+}
